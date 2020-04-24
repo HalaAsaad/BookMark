@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  font-family: 'sans-serif', 'Helvetica', 'Arial';
+}
+.navigation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  padding: 0 5%;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+.navigation li{
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+.navigation ul li:hover {
+ cursor: pointer;
+}
+.navigation a {
+  text-decoration: none;
+}
+main {
+  display: flex;
+  margin-top: 56px;
+  height: 800px;
+}
+.leftContent {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282c34;
+  height:800px;
+  padding-top: 56px;
+}
+.leftContent img {
+  width: 40%;
+}
+.leftContent form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 200px;
+  margin: 50px auto 0 auto;
+  background: #333;
+  padding: 2 em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.leftContent form div{
+  display: flex;
+  flex-direction: column;
+}
+.leftContent form .formTitle, 
+.leftContent form .formLabel {
+  margin: 0;
+  color: white;
+  padding-top: 8px;
+}
+.leftContent form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.5em;
+}
+.leftContent form button {
+  margin-top: 1em;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #61daf0;
+  color: black;
+  width: 50%;
+}
+.rightContent {
+  background-color: #61daf0;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height:100%;
+  padding-top: 56px;
+}
+.rightContent .linkCard {
+  background-color: #333;
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.rightContent .linkCardImage {
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+}
+.rightContent .linkCardLink a {
+  color: white;
+  margin-left: 10px;
+}
